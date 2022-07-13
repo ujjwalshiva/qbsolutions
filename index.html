@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="GoogleSans-Regular-normal.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@tailwindcss/custom-forms@0.2.1/dist/custom-forms.css" rel="stylesheet" />
+</head>
+
+<body oncontextmenu="return false">
+    
+    <div class="min-h-screen flex items-center justify-center bg-gray-50 dark:bg-black pt-2 pb-8 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-md w-full space-y-8">
+            <div>
+                <img class="mx-auto h-20 w-auto rounded-lg" src="logo.png"
+                    alt="Workflow" id="logo">
+                <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-900 dark:text-white" id="heading">
+                    QB Solutions Archive
+                </h2>
+                <p class="mt-2 text-center text-sm text-zinc-600">
+                    A
+                    <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500 dark:text-zinc-400">
+                        Discord IARE '24
+                    </a>
+                    Initiative
+                </p>
+            </div>
+    
+            <div class="rounded-lg bg-white max-w-md overflow-hidden shadow-xl p-8 rounded-md dark:bg-zinc-800 border-transparent">
+                <form class="space-y-2">
+                    <div class="rounded-md shadow-sm -space-y-px">
+                        <div class="grid gap-6">
+                            <div class="col-span-12">
+                                <label for="name" class="block text-sm font-medium text-gray-700 dark:text-zinc-400 p-2">Name</label>
+                                <input type="text" name="name" id="name" autocomplete="given-name"
+                                    class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow sm:text-sm border-indigo-500 rounded-md p-3 dark:bg-zinc-600 dark:text-white" placeholder="Full Name">
+                            </div>
+    
+                            <div class="col-span-12">
+                                <label for="email" class="block text-sm font-medium text-gray-700 dark:text-zinc-400 p-2">Email
+                                    address</label>
+                                <input type="email" name="email" id="email" autocomplete="email"
+                                    class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow sm:text-sm border-indigo-500 rounded-md p-3 dark:bg-zinc-600 dark:text-white" placeholder="IARE Domain Mail Only">
+                            </div>
+
+                            <div class="col-span-12">
+                                <label for="semester" class="block text-sm font-medium text-gray-700 dark:text-zinc-400 p-2">Select Semester</label>
+                                <select class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow sm:text-sm border-gray-300 rounded-md p-3 dark:bg-zinc-600 dark:text-neutral-50" id="semester" onchange="sub_sem()">
+                                    <option value="sem_1">I Semester</option>
+                                    <option value="sem_2">II Semester</option>
+                                    <option value="sem_3">III Semester</option>
+                                </select>
+                            </div>
+
+                            <div class="col-span-12">
+                                <label for="subject" class="block text-sm font-medium text-gray-700 dark:text-zinc-400 p-2">Multi-select Subjects</label>
+                                <select
+                                    class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow sm:text-sm border-gray-300 rounded-md p-3 dark:bg-zinc-600 dark:text-neutral-50 h-200" id="subjects" multiple>
+                                    <option value="Python Programming">Python Programming</option>
+                                    <option value="Chemistry">Chemistry</option>
+                                    <option value="Linear Algebra and Calculus">Linear Algebra and Calculus</option>
+                                    <option value="Basic Electrical Engineering">Basic Electrical Engineering</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="flex items-center justify-between py-4 px-2">
+                        <div class="flex items-center">
+                            <input id="agree" name="agree" type="checkbox"
+                                class="h-4 w-4 text-indigo-700 focus:ring-indigo-700 border-gray-300 rounded focus:outline-none transition duration-200">
+                            <label for="agree" class="ml-2 block text-sm text-indigo-700 dark:text-white">
+                                Click here to confirm
+                            </label>
+                        </div>
+                    </div>
+    
+    
+                    <div>
+                        <button type='button' class="group relative w-full flex justify-center py-3 px-4 border border-transparent text-sm font-medium rounded-md text-indigo-100 bg-indigo-600 hover:bg-indigo-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition duration-800" id="submit">
+                            <span class="absolute left-0 inset-y-0 flex items-center pl-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="h-5 w-5 text-indigo-200 group-hover:text-indigo-100" viewBox="0 0 16 16">
+                                    <path
+                                        d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zm-1 4v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 11.293V7.5a.5.5 0 0 1 1 0z" />
+                                </svg>
+                            </span>
+                            Get Me Solutions!
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script>
+        function make_pdf(name, subjects, selected, semester, sem_1, sem_2, sem_3, sem_4, sem_5, sem_6) {
+            var doc = jspdf.jsPDF('p', 'mm', 'a4', true);
+
+            doc.setFontSize(40);
+
+            doc.addImage("banner.png", "JPEG", 15, 15, 180, 101, 'FAST');
+
+            doc.setFont("GoogleSans-Regular", "normal");
+            doc.setFontSize(16);
+
+            doc.setTextColor(50);
+            doc.text(`Hey there ${name}!`, 18, 135);
+            doc.text("Please find the access links below:", 18, 145);
+
+            doc.setTextColor(94, 23, 235);
+            doc.textWithLink(`${selected[0]}`, 18, 165, { url: `${eval(semester)[selected[0]]}` });
+            doc.textWithLink(`${selected[1]}`, 18, 185, { url: `${eval(semester)[selected[1]]}` });
+            doc.textWithLink(`${selected[2]}`, 18, 205, { url: `${eval(semester)[selected[2]]}` });
+            doc.textWithLink(`${selected[3]}`, 18, 225, { url: `${eval(semester)[selected[3]]}` });
+            doc.textWithLink(`${selected[4]}`, 18, 245, { url: `${eval(semester)[selected[4]]}` });
+            doc.textWithLink(`${selected[5]}`, 18, 265, { url: `${eval(semester)[selected[5]]}` });
+
+            doc.setFontSize(14);
+            doc.setTextColor(150);
+            doc.setFont("helvetica", "normal");
+            doc.textWithLink("Mail any issues at discordiare24@gmail.com", 60, 285, { url: 'mailto:discordiare24@gmail.com' });
+
+            window.open(doc.output('bloburl'));
+        }
+        
+    </script>
+</body>
+
+
+</html>
