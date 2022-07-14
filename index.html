@@ -154,7 +154,7 @@
             doc.textWithLink("Mail any issues at discordiare24@gmail.com", 58, 285, { url: 'mailto:discordiare24@gmail.com' });
             doc.setProperties({ title: 'QB Solutions Request' });
 
-            window.open(doc.output('bloburl'));
+            doc.save(`QB Solutions Request by ${name}.pdf`);
         }
         
     </script>
