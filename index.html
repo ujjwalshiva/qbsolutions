@@ -6,12 +6,8 @@
     <title>QB Solutions Archive</title>
     <link rel="icon" type="image/x-icon" href="favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:image" content="https://i.imgur.com/bmZ80HT.png" />
-    <meta property="og:image" content="https://i.imgur.com/bmZ80HT.png" />
-    <meta property="og:image:secure_url" content="https://i.imgur.com/bmZ80HT.png" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="675" />
+    <meta property="og:image" content="preview.png" />
+    <meta property="og:image:secure_url" content="preview.png" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://github.com/ujjwalshiva/qbsolutions" />
     <meta property="og:title" content="Question Bank Solutions Archive" />
@@ -23,7 +19,7 @@
 
 <body oncontextmenu="return false">
     
-    <div class="min-h-screen flex items-center justify-center bg-gray-50 dark:bg-black pt-8 pb-12 px-4 sm:px-6 lg:px-8">
+    <div class="min-h-screen flex items-center justify-center bg-gray-50 dark:bg-black pt-8 pb-16 px-4 sm:px-6 lg:px-8">
         <div class="max-w-md w-full space-y-8">
             <div>
                 <img class="mx-auto h-20 w-auto rounded-lg" src="logo.png"
@@ -33,7 +29,7 @@
                 </h2>
                 <p class="mt-2 text-center text-sm text-zinc-600">
                     A
-                    <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500 dark:text-zinc-400">
+                    <a href="https://discord.gg/KxbB6Bgt9s" target="_blank" class="font-medium text-indigo-600 hover:text-indigo-500 dark:text-zinc-400">
                         Discord IARE '24
                     </a>
                     Initiative
@@ -106,6 +102,17 @@
             </div>
         </div>
     </div>
+    <footer class="text-center text-white" style="background-color: #6366f1;">    
+        <div class="text-center p-4 font-mono" style="background-color: rgba(0, 0, 0, 0.2);">
+            <p class="flex justify-center items-center">
+                <span class="mr-4">Be a Member.</span>
+                <button type="button"
+                    class="inline-block px-6 py-2 border-2 border-white text-white font-medium text-xs leading-tight uppercase rounded-full hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">
+                    <a href="https://discord.gg/KxbB6Bgt9s" target="_blank" class="font-sans"><b>Join Now</b></a>
+                </button>
+            </p>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
     
@@ -136,7 +143,8 @@
             doc.setFontSize(14);
             doc.setTextColor(150);
             doc.setFont("helvetica", "normal");
-            doc.textWithLink("Mail any issues at discordiare24@gmail.com", 60, 285, { url: 'mailto:discordiare24@gmail.com' });
+            doc.textWithLink("Mail any issues at discordiare24@gmail.com", 58, 285, { url: 'mailto:discordiare24@gmail.com' });
+            doc.setProperties({ title: 'QB Solutions Request' });
 
             window.open(doc.output('bloburl'));
         }
