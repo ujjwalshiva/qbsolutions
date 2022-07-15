@@ -81,7 +81,7 @@ function sub_sem() {
 
 function validate_mail(email) {
     let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-    if (email.match(regexEmail) && (email.includes("@iare.ac.in")) && (email.length == 21) && (email.includes("95")) && (typeof email[9] == 'number')) {
+    if (email.match(regexEmail) && (email.includes("@iare.ac.in")) && (email.length == 21) && (email.includes("95")) && (parseInt(email[9]) != NaN)) {
         return true;
     } else {
         return false;
