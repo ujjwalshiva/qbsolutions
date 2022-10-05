@@ -51,12 +51,12 @@ const sem_3 = {
 }
 
 const sem_4 = {
-    "Business Economics and Financial Analysis": "",
-    "Design and Analysis of Algorihtms": "",
-    "Database Management Systems": "",
+    "Business Economics and Financial Analysis": "https://drive.google.com/drive/folders/19Wh2kGLc6YiMnOHIUJ3Z9atDFJZvmoKr?usp=sharing",
+    "Design and Analysis of Algorihtms": "https://drive.google.com/drive/folders/1URRkH1a1hDHW8f6Zrl7tM-O2MHeLae3b?usp=sharing",
+    "Database Management Systems": "https://drive.google.com/drive/folders/1fTRGvZmBkayzFd3q7FjVO5RK33pG1eDu?usp=sharing",
     "Operating Systems": "https://drive.google.com/drive/folders/16PVWMEYCQassfaPBjgsrupRkY5eb46P3?usp=sharing",
-    "Theory Of Computation": "",
-    "Indian Tradition": "https://docs.google.com/document/d/1Lg0xneDyLRoM0wYeVDW0P2K7E6Ip90WL_EVEQqCr8ZI/view"
+    "Theory Of Computation": "https://drive.google.com/drive/folders/1nvbnNLo3G2FIoqN9k_e3mtlvdKvFOq_C?usp=sharing",
+    "Indian Tradition": "https://docs.google.com/document/d/1Lg0xneDyLRoM0wYeVDW0P2K7E6Ip90WL_EVEQqCr8ZI/edit?usp=sharing"
 }
 
 const sem_5 = {
