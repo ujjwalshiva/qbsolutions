@@ -26,11 +26,7 @@
 
 
 ## Running
-
-
-< How to Install locally> 
-```Run index.html on your browser
-```
+`Run index.html on your browser`
   
 ## Known Issues
   - [ ]  No Issues as of now
