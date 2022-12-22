@@ -3,8 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>QB Solutions Archive</title>
+    <title>QBS Archives</title>
     <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link rel="stylesheet" href="style.css" class="css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@100;200;300;400;500;700;900&display=swap" />
+    <link rel="stylesheet" type="text/css" href="toastify.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:image" content="https://i.imgur.com/bmZ80HT.png" />
@@ -23,55 +26,42 @@
 </head>
 
 <body oncontextmenu="return false">
-    
-    <div class="min-h-screen flex items-center justify-center bg-gray-50 dark:bg-black pt-8 pb-16 mb-14 px-4 sm:px-6 lg:px-8">
+    <div class="min-h-screen flex items-center justify-center bg-gray-50 pt-8 pb-12 mb-14 px-4 sm:px-6 lg:px-8">
         <div class="max-w-md w-full space-y-8 animate__animated animate__slideInDown">
             <div>
-                <img class="mx-auto h-20 w-auto rounded-lg" src="logo.png"
-                    alt="Workflow" id="logo">
-                <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-900 dark:text-white" id="heading">
-                    QB Solutions Archive
+                <img class="mx-auto h-20 w-auto rounded-lg" src="logo.png" alt="Workflow" id="logo">
+                <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-900" id="heading">
+                    QBS Archives
                 </h2>
-                <p class="mt-2 text-center text-sm text-zinc-600">
-                    A
-                    <a href="https://discord.gg/KxbB6Bgt9s" target="_blank" class="font-medium text-indigo-600 hover:text-indigo-500 dark:text-zinc-400">
-                        Discord IARE '24
-                    </a>
-                    Initiative
+                <p class="mt-2 text-center text-sm text-zinc-500">
+                    Get Solutions to Question Banks by Class of 2024
                 </p>
             </div>
-    
-            <div class="rounded-lg bg-white max-w-md overflow-hidden shadow-xl p-8 rounded-md dark:bg-zinc-800 border-transparent animate__animated animate__slideInUp">
+            <div class="rounded-lg bg-white max-w-md overflow-hidden shadow-xl p-8 rounded-md animate__animated animate__slideInUp">
                 <form class="space-y-2">
-                    <div class="rounded-md shadow-sm -space-y-px">
+                    <div class="rounded-md  -space-y-px">
                         <div class="grid gap-6">
                             <div class="col-span-12">
-                                <label for="name" class="block text-sm font-medium text-gray-700 dark:text-zinc-400 p-2">Name</label>
-                                <input type="text" name="name" id="name" autocomplete="given-name"
-                                    class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow sm:text-sm border-indigo-500 rounded-md p-3 dark:bg-zinc-600 dark:text-white" placeholder="Full Name">
+                                <label for="name" class="block text-sm font-medium text-gray-700 p-2">Name</label>
+                                <input type="text" name="name" id="name" autocomplete="given-name" class="mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full shadow sm:text-sm border-blue-500 rounded-md p-3 outline-blue-500" placeholder="Full Name">
                             </div>
-    
                             <div class="col-span-12">
-                                <label for="email" class="block text-sm font-medium text-gray-700 dark:text-zinc-400 p-2">Domain Mail
+                                <label for="email" class="block text-sm font-medium text-gray-700 p-2">Domain Mail
                                     Address</label>
-                                <input type="email" name="email" id="email" autocomplete="email"
-                                    class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow sm:text-sm border-indigo-500 rounded-md p-3 dark:bg-zinc-600 dark:text-white" placeholder="IARE Domain Mail Only">
+                                <input type="email" name="email" id="email" autocomplete="email" class="mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full shadow sm:text-sm border-blue-500 rounded-md p-3 outline-blue-500" placeholder="IARE Domain Mail Only">
                             </div>
-
                             <div class="col-span-12">
-                                <label for="semester" class="block text-sm font-medium text-gray-700 dark:text-zinc-400 p-2">Select Semester</label>
-                                <select class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow sm:text-sm border-gray-300 rounded-md p-3 dark:bg-zinc-600 dark:text-neutral-50" id="semester" onchange="sub_sem()">
+                                <label for="semester" class="block text-sm font-medium text-gray-700 p-2">Select Semester</label>
+                                <select class="mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full shadow sm:text-sm border-gray-300 rounded-md p-3 outline-blue-500" id="semester" style="background-color: white;" onchange="sub_sem()">
                                     <option value="sem_1">I Semester</option>
                                     <option value="sem_2">II Semester</option>
                                     <option value="sem_3">III Semester</option>
                                     <option value="sem_4">IV Semester</option>
                                 </select>
                             </div>
-
                             <div class="col-span-12">
-                                <label for="subject" class="block text-sm font-medium text-gray-700 dark:text-zinc-400 p-2">Multi-select Subjects</label>
-                                <select
-                                    class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow sm:text-sm border-gray-300 rounded-md p-3 dark:bg-zinc-600 dark:text-neutral-50 h-200" id="subjects" multiple>
+                                <label for="subject" class="block text-sm font-medium text-gray-700 p-2">Multi-select Subjects</label>
+                                <select class="mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full shadow sm:text-sm border-gray-300 rounded-md p-3 h-200 outline-blue-500" id="subjects" style="background-color: white;" multiple>
                                     <option value="Python Programming">Python Programming</option>
                                     <option value="Chemistry">Chemistry</option>
                                     <option value="Linear Algebra and Calculus">Linear Algebra and Calculus</option>
@@ -80,25 +70,19 @@
                             </div>
                         </div>
                     </div>
-    
                     <div class="flex items-center justify-between py-4 px-2">
                         <div class="flex items-center">
-                            <input id="agree" name="agree" type="checkbox"
-                                class="h-4 w-4 text-indigo-700 focus:ring-indigo-700 border-gray-300 rounded focus:outline-none transition duration-200">
-                            <label for="agree" class="ml-2 block text-sm text-indigo-700 dark:text-white">
+                            <input id="agree" name="agree" type="checkbox" class="h-4 w-4 text-blue-700 focus:ring-blue-700 border-gray-300 rounded focus:outline-none transition duration-200 outline-blue-500">
+                            <label for="agree" class="ml-2 block text-sm text-blue-700">
                                 Click here to confirm
                             </label>
                         </div>
                     </div>
-    
-    
                     <div>
-                        <button type='button' class="group relative w-full flex justify-center py-3 px-4 border border-transparent text-sm font-medium rounded-md text-indigo-100 bg-indigo-600 hover:bg-indigo-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition duration-800" id="submit">
+                        <button type='button' class="group relative w-full flex justify-center py-3 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-blue-500 hover:bg-blue-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition duration-800" id="submit">
                             <span class="absolute left-0 inset-y-0 flex items-center pl-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="h-5 w-5 text-indigo-200 group-hover:text-indigo-100" viewBox="0 0 16 16">
-                                    <path
-                                        d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zm-1 4v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 11.293V7.5a.5.5 0 0 1 1 0z" />
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="h-5 w-5 text-white group-hover:text-blue-100" viewBox="0 0 16 16">
+                                    <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zm-1 4v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 11.293V7.5a.5.5 0 0 1 1 0z" />
                                 </svg>
                             </span>
                             Get Me Solutions!
@@ -108,58 +92,57 @@
             </div>
         </div>
     </div>
-    <div class="fixed bottom-0 w-screen animate__animated animate__backInUp" >
-        <footer class="text-center text-white" style="background-color: #6366f1;">
-            <div class="text-center p-4 font-mono" style="background-color: rgba(0, 0, 0, 0.2);">
+    <div class="fixed bottom-0 w-screen animate__animated animate__backInUp">
+        <footer class="text-center text-white" style="background: url('footer.png'); background-size:cover; background-repeat:no-repeat;">
+            <div class="text-center p-4 font-mono" style="background-color: rgba(0, 0, 0, 0.1);">
                 <p class="flex justify-center items-center">
-                    <span class="mr-4">Be a Member.</span>
-                    <button type="button"
-                        class="inline-block px-6 py-2 border-2 border-white text-white font-medium text-xs leading-tight uppercase rounded-full hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">
-                        <a href="https://discord.gg/KxbB6Bgt9s" target="_blank" class="font-sans"><b>Join Now</b></a>
+                    <!-- <span class="mr-4">Be a Member</span> -->
+                    <img class="mx-4" src="gdsciarelogo.png" alt="" width="100vh">
+                    <button type="button" class="inline-block drop-shadow-xl px-6 py-2 bg-white border-2 border-white text-blue-500 font-medium text-xs leading-tight uppercase rounded-full hover:bg-black hover:bg-opacity-5 hover:text-white focus:outline-none focus:ring-0 transition duration-150 ease-in-out">
+                        <a href="http://bit.ly/gdsciare" target="_blank" class="font-sans"><b>Join Now</b></a>
                     </button>
                 </p>
             </div>
         </footer>
     </div>
-    
-
     <script src="script.js"></script>
-    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script type="text/javascript" src="toastify-js.js"></script>
     <script>
-        function make_pdf(name, subjects, selected, semester, sem_1, sem_2, sem_3, sem_4, sem_5, sem_6) {
-            var doc = jspdf.jsPDF('p', 'mm', 'a4', true);
 
-            doc.setFontSize(40);
+    function make_pdf(name, subjects, selected, semester, sem_1, sem_2, sem_3, sem_4, sem_5, sem_6) {
+        var doc = jspdf.jsPDF('p', 'mm', 'a4', true);
 
-            doc.addImage("banner.png", "JPEG", 15, 15, 180, 101, 'FAST');
+        doc.setFontSize(40);
 
-            doc.setFont("GoogleSans-Regular", "normal");
-            doc.setFontSize(16);
+        doc.addImage("banner.png", "JPEG", 15, 15, 180, 101, 'FAST');
 
-            doc.setTextColor(50);
-            doc.text(`Hey there ${name}!`, 18, 135);
-            doc.text("Please find the access links below:", 18, 145);
+        doc.setFont("GoogleSans-Regular", "normal");
+        doc.setFontSize(16);
 
-            doc.setTextColor(94, 23, 235);
-            doc.textWithLink(`${selected[0]}`, 18, 165, { url: `${eval(semester)[selected[0]]}` });
-            doc.textWithLink(`${selected[1]}`, 18, 185, { url: `${eval(semester)[selected[1]]}` });
-            doc.textWithLink(`${selected[2]}`, 18, 205, { url: `${eval(semester)[selected[2]]}` });
-            doc.textWithLink(`${selected[3]}`, 18, 225, { url: `${eval(semester)[selected[3]]}` });
-            doc.textWithLink(`${selected[4]}`, 18, 245, { url: `${eval(semester)[selected[4]]}` });
-            doc.textWithLink(`${selected[5]}`, 18, 265, { url: `${eval(semester)[selected[5]]}` });
+        doc.setTextColor(50);
+        doc.text(`Hey there ${name}!`, 18, 135);
+        doc.text("Please find the access links below:", 18, 145);
 
-            doc.setFontSize(14);
-            doc.setTextColor(150);
-            doc.setFont("helvetica", "normal");
-            doc.textWithLink("Mail any issues at discordiare24@gmail.com", 58, 285, { url: 'mailto:discordiare24@gmail.com' });
-            doc.setProperties({ title: 'QB Solutions Request' });
+        doc.setTextColor(30,120,247);
+        doc.textWithLink(`${selected[0]}`, 18, 165, { url: `${eval(semester)[selected[0]]}` });
+        doc.textWithLink(`${selected[1]}`, 18, 180, { url: `${eval(semester)[selected[1]]}` });
+        doc.textWithLink(`${selected[2]}`, 18, 195, { url: `${eval(semester)[selected[2]]}` });
+        doc.textWithLink(`${selected[3]}`, 18, 210, { url: `${eval(semester)[selected[3]]}` });
+        doc.textWithLink(`${selected[4]}`, 18, 225, { url: `${eval(semester)[selected[4]]}` });
+        doc.textWithLink(`${selected[5]}`, 18, 240, { url: `${eval(semester)[selected[5]]}` });
+        doc.textWithLink(`${selected[6]}`, 18, 255, { url: `${eval(semester)[selected[6]]}` });
+        doc.textWithLink(`${selected[7]}`, 18, 270, { url: `${eval(semester)[selected[7]]}` });
 
-            doc.save(`QB Solutions Request by ${name}.pdf`);
-        }
-        
+        doc.setFontSize(8);
+        doc.setTextColor(150);
+        doc.setFont("helvetica", "normal");
+        doc.textWithLink("Any issues? Mail to ujjwalpm1@gmail.com", 80, 288, { url: 'mailto:ujjwalpm1@gmail.com' });
+        doc.setProperties({ title: 'QB Solutions Request' });
+
+        doc.save(`QB Solutions Request by ${name}.pdf`);
+    }
     </script>
 </body>
-
 
 </html>
