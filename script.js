@@ -66,7 +66,13 @@ const sem_4 = {
 }
 
 const sem_5 = {
-
+    "Web App Development":"https://drive.google.com/drive/folders/1t5V8iKJFJpR-GpEtDPluh1et-WOtQzJl?usp=sharing",
+    "Object Oriented Software Engineering":"https://drive.google.com/drive/folders/1uycXck9OrfGQd4Qspb69PwHyMPqhschC?usp=sharing",
+    "Image Processing":"https://drive.google.com/drive/folders/1feiGuhOL_5h4JCgZuIvFApj4kmPRjVki?usp=sharing",
+    "Embedded Systems":"https://drive.google.com/drive/folders/1OjiOWVKADfU_eO7Wok0onnzL6mDibB5S?usp=sharing",
+    "Competitive Programming using Graph Algorithms":"https://drive.google.com/drive/folders/15cifXZf4pFv_YfkteLslZDcUbxXoMHp-?usp=sharing",
+    "Computer Networks":"https://drive.google.com/drive/folders/12QWgJPNe4Y_rdzQPnlRe5Klvp-loUACM?usp=sharing",
+    "Compiler Design":"https://drive.google.com/drive/folders/1mmFSmGzuZfM-XNTbYn7h26EPGOiSQmUv?usp=sharing"
 }
 
 const sem_6 = {
