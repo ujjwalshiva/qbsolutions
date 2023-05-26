@@ -62,7 +62,7 @@ const sem_4 = {
     "Database Management Systems": "https://drive.google.com/drive/folders/1fTRGvZmBkayzFd3q7FjVO5RK33pG1eDu?usp=sharing",
     "Operating Systems": "https://drive.google.com/drive/folders/16PVWMEYCQassfaPBjgsrupRkY5eb46P3?usp=sharing",
     "Theory Of Computation": "https://drive.google.com/drive/folders/1nvbnNLo3G2FIoqN9k_e3mtlvdKvFOq_C?usp=sharing",
-    "Indian Tradition": "https://docs.google.com/document/d/1Lg0xneDyLRoM0wYeVDW0P2K7E6Ip90WL_EVEQqCr8ZI/edit?usp=sharing"
+    "Indian Constitution": "https://docs.google.com/document/d/1Lg0xneDyLRoM0wYeVDW0P2K7E6Ip90WL_EVEQqCr8ZI/edit?usp=sharing"
 }
 
 const sem_5 = {
