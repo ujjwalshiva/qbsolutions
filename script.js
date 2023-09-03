@@ -62,7 +62,7 @@ const sem_4 = {
     "Database Management Systems": "https://drive.google.com/drive/folders/1fTRGvZmBkayzFd3q7FjVO5RK33pG1eDu?usp=sharing",
     "Operating Systems": "https://drive.google.com/drive/folders/16PVWMEYCQassfaPBjgsrupRkY5eb46P3?usp=sharing",
     "Theory Of Computation": "https://drive.google.com/drive/folders/1nvbnNLo3G2FIoqN9k_e3mtlvdKvFOq_C?usp=sharing",
-    "Indian Constitution": "https://docs.google.com/document/d/1Lg0xneDyLRoM0wYeVDW0P2K7E6Ip90WL_EVEQqCr8ZI/edit?usp=sharing"
+    "Indian Tradition": "https://docs.google.com/document/d/1Lg0xneDyLRoM0wYeVDW0P2K7E6Ip90WL_EVEQqCr8ZI/edit?usp=sharing"
 }
 
 const sem_5 = {
@@ -76,6 +76,15 @@ const sem_5 = {
 }
 
 const sem_6 = {
+    "Data Mining and Knowledge Discovery":"https://drive.google.com/drive/folders/1dzsy95FifHl3bI-N36X0BQk1Sr9ii7ad?usp=drive_link",
+    "Network and Web Security":"https://drive.google.com/drive/folders/1DxUCZR2KIhSHnO3A5INavWsGbD5ytbMU?usp=drive_link",
+    "Software Quality and Assurance Testing":"https://drive.google.com/drive/folders/1mmmImmTKXtcMy2Eplm109Yd9IjKH2mfL?usp=drive_link",
+    "Software Project Management":"https://drive.google.com/drive/folders/1JCkZcN4ARUvLVgWFmQnXtoiAoe02WP7k?usp=drive_link",
+    "Disaster Management":"https://drive.google.com/drive/folders/1s-fkR6HvlnAbdXrQJImSwAhL9aQ1ttlJ?usp=drive_link",
+    "Go Programming":"https://drive.google.com/drive/folders/1OgaddgW0II8Wg7VWqV_aZWk4jX3XyPod?usp=drive_link"
+}
+
+const sem_7 = {
 
 }
 
