@@ -131,7 +131,10 @@ const sem_7 = {
         "https://drive.google.com/drive/folders/1ZW5isecmb4kbXXuVY11lmc-2doVShW8_?usp=drive_link",
 };
 
-const sem_8 = {};
+const sem_8 = {
+    "High Performance Computing":
+        "https://drive.google.com/drive/folders/1ML0pWukAreF16KcrTYtonnfeyzWnI064?usp=drive_link",
+};
 
 function sub_sem() {
     semester = document.querySelector("#semester").value;
@@ -283,7 +286,9 @@ function submit() {
         sem_3,
         sem_4,
         sem_5,
-        sem_6
+        sem_6,
+        sem_7,
+        sem_8
     );
     const options = {
         method: "POST",
